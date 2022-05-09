@@ -1,0 +1,114 @@
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 500px;
+    width: 70%;
+    text-align: center;
+}
+
+.container h1{
+    font-size: 20px;
+    color: blueviolet;
+    margin-bottom: 30px;
+}
+
+form{
+    margin-bottom: 40px;
+}
+
+.field{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+.field input{
+    padding: 10px;
+    border: 1px solid blueviolet;
+    outline: none;
+    width: 100%;
+    color: blueviolet;
+    font-family: inherit;
+}
+
+.field input::placeholder{
+    color: blueviolet;
+}
+
+.field button{
+    padding: 6px 15px;
+    font-family: inherit;
+    background-color: blueviolet;
+    border: navajowhite;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.todo{
+    width: 70%;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    height: auto;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px auto;
+}
+
+@media only screen and (max-width: 600px){
+    .todo{
+        width: 90%;
+    }
+}
+
+.todo em{
+    font-style: normal;
+    font-size: 14px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+    margin-bottom: 10px;
+}
+
+.card:hover{
+    background-color: #fff;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.card p:nth-child(2){
+    font-size: 30px;
+    margin: inherit;
+}
