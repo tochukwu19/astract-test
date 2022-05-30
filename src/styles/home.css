@@ -85,12 +85,13 @@ form{
     background: blueviolet;
     width: 70%;
     color: #fff;
-    padding: 15px 0px;
+    padding: 10px 0px;
     opacity: 0;
     z-index: 21;
     display: flex;
     justify-content: space-around;
     transition: 0.3s all;
+    align-items: center;
 }
 
 .overlay:hover{
@@ -107,7 +108,17 @@ form{
 }
 
 .overlay img{
-    height: 22.5px;
+    height: 16px;
+}
+
+.overlay p{
+    font-size: 13px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.overlay p:hover{
+    text-decoration: underline;
 }
 
 .deadlineInput{
@@ -121,4 +132,60 @@ form{
 
 .deadlineInput::-webkit-calendar-picker-indicator{
     filter: invert(1);
+}
+
+.comments{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.comments ul{
+    list-style-type: none;
+    font-size: 13px;
+    padding: 0;
+}
+
+.editContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comments li{
+    margin-bottom: 5px;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.comments img{
+    height: 20px;
+    margin-right: 5px;
+}
+
+.add-comments{
+    display: flex;
+}
+
+.add-comments input{
+    padding: 10px;
+    border: 1px solid blueviolet;
+    outline: none;
+    width: 100%;
+    color: blueviolet;
+    font-family: inherit;
+    width: 70%;
+}
+
+.add-comments input::placeholder{
+    color: blueviolet;
+}
+
+.add-comments button{
+    width: 30%;
 }
