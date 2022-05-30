@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, {useRef, useState} from 'react';
 import "../styles/home.css";
 import Bin from "../images/bin.png";
